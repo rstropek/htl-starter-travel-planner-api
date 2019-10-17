@@ -64,7 +64,7 @@ The bus routes and their scheduled departure and arrival times can be read from 
 
 * You do *not* have to implement error handling. You can assume that the JSON file can be successfully read and that it contains meaningful values. You can assume that meaningful parameters are given (e.g. given city must exist in bus schedule JSON file). If not, it is ok if your app crashes with an unhandled exception.
 
-* Put the business logic (deserialize the JSON content, finding bus route) in a reusable *.NET Standard 2.1* class library. The class library *must not* contain any input or output (e.g. sending HTTP requests, reading files, writing to console).
+* Put the business logic of finding bus routes in a reusable *.NET Standard 2.1* class library. The class library *must not* contain any input or output (e.g. sending HTTP requests, reading files, writing to console).
 
 * Read the JSON content into appropriate in-memory data structures. It is up to you to decide which data structures make most sense.
   * **Tip:** You do not have to convert time values, you can process them *as strings* because all time values always follow the format *HH:MM* (24-hours schema)
